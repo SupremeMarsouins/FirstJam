@@ -11,7 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">Layout 1</layout>
+<<<<<<< HEAD
         <event-sheet active="1" order="2">Player_Sheet</event-sheet>
+=======
+        <event-sheet active="1" order="2">GolemEvents</event-sheet>
+>>>>>>> 9c93fb202219bd3a04c30d734ff19d839c562adb
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,8 +32,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+<<<<<<< HEAD
+        <folder expanded="1" path="animation-folder/BlueGolem/" />
+        <folder expanded="1" path="animation-folder/Bullet/" />
+        <folder expanded="1" path="animation-folder/OrangeGolem/" />
+=======
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/maison/" />
         <folder expanded="1" path="animation-folder/rue/" />
+>>>>>>> 1062b90afed0e6410fdcaad3cdadb7735affd113
     </folders-expanded>
 </c2uistate>

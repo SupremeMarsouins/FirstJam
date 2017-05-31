@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GolemEvents</name>
+    <events>
+        <event-block sid="492180528071185">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="124472594029532" type="BlueGolem">
+                    <param id="0" name="Object">Bullet</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="318217672440640" type="BlueGolem">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Bullet.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="693952753966180" type="BlueGolem" />
+            </actions>
+        </event-block>
+        <event-block sid="959610641407121">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="441307845449170" type="BlueGolem">
+                    <param id="0" name="Object">Bullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="362803019215378" type="BlueGolem">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">Bullet.Damage</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="139390370318269">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="132230102012879" type="OrangeGolem">
+                    <param id="0" name="Object">Bullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="321722230362683" type="OrangeGolem" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
