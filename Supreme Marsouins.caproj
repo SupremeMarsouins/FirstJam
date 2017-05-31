@@ -10,11 +10,16 @@
     <unique-id>21fbcys8py012</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -51,6 +56,11 @@
         </object-type>
         <object-type name="Player" sid="720903054387794">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="289181964658953">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609800795640359" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\jam\jam1ressource\MC_sprite.png">
@@ -84,6 +94,15 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Gamepad" sid="986705754245532">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="Mouse" sid="145751821450021">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="516316984895317">
+            <plugin id="Keyboard" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -91,8 +110,17 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Player_Sheet.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Gamepad" uid="7">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="8" />
+        <global-instance type="Keyboard" uid="9" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
