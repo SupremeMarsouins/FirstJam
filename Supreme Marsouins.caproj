@@ -9,15 +9,25 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>21fbcys8py012</unique-id>
     <saved-with-version>24400</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+<<<<<<< HEAD
+=======
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+>>>>>>> 1062b90afed0e6410fdcaad3cdadb7735affd113
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>1920</width>
+        <height>1080</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -37,13 +47,102 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="BlueGolem" sid="965637457183995">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="238507353286156" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="341830316448385">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135395845439390" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet" sid="112368836265340">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Damages dealt when a golem is hit" name="Damage" sid="940963018238614" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="835173868291011">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994517083305366" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OrangeGolem" sid="405353943892562">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="625010377085998">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655420764418650" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="168147235004278">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\jam\jam1ressource\bg.png" />
+        </object-type>
+        <object-type name="Player" sid="720903054387794">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609800795640359" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\jam\jam1ressource\MC_sprite.png">
+                        <collision-poly>
+                            <point x="0.359375" y="0.359375" />
+                            <point x="0.5" y="0.132813" />
+                            <point x="0.570313" y="0.429688" />
+                            <point x="0.601563" y="0.5" />
+                            <point x="0.617188" y="0.617188" />
+                            <point x="0.5" y="0.945313" />
+                            <point x="0.351563" y="0.648438" />
+                            <point x="0.367188" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="maison" sid="789813499083761">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502375655586590" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\jam\jam1ressource\maison_01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rue" sid="369475275242849">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650645542866668" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\jam\jam1ressource\rue.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+<<<<<<< HEAD
+        <event-sheet>Player_Sheet.xml</event-sheet>
+=======
+        <event-sheet>GolemEvents.xml</event-sheet>
+>>>>>>> 9c93fb202219bd3a04c30d734ff19d839c562adb
     </event-folder>
     <global-instances />
     <sounds-folder />

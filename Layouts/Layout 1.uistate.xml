@@ -4,11 +4,27 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>427</position-x>
-        <position-y>240</position-y>
-        <position-z>100</position-z>
-        <lookat-x>427</lookat-x>
-        <lookat-y>240</lookat-y>
+<<<<<<< HEAD
+        <position-x>2044.39</position-x>
+        <position-y>1333.84</position-y>
+        <position-z>318.631</position-z>
+        <lookat-x>2044.39</lookat-x>
+        <lookat-y>1333.84</lookat-y>
+=======
+<<<<<<< HEAD
+        <position-x>468.474</position-x>
+        <position-y>350.933</position-y>
+        <position-z>46.6507</position-z>
+        <lookat-x>468.474</lookat-x>
+        <lookat-y>350.933</lookat-y>
+=======
+        <position-x>1736.91</position-x>
+        <position-y>1335.43</position-y>
+        <position-z>318.631</position-z>
+        <lookat-x>1736.91</lookat-x>
+        <lookat-y>1335.43</lookat-y>
+>>>>>>> 1062b90afed0e6410fdcaad3cdadb7735affd113
+>>>>>>> 9c93fb202219bd3a04c30d734ff19d839c562adb
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -18,11 +34,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <show-collision-polys>0</show-collision-polys>
     <translucent-inactive-layers>0</translucent-inactive-layers>
     <properties>
+        <property expanded="1" name="Layout properties" />
         <property expanded="0" name="Layout Size" />
         <property expanded="0" name="Margins" />
+        <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Layer 0" />
+    <active-layer name="Layer 1" />
     <layers>
-        <layer locked="0" name="Layer 0" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Layer 0" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Layer 1" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
