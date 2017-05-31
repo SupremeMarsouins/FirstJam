@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Golems Events</name>
+    <events>
+        <event-block sid="319810588116344">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="658960096679194" type="BlueGolem">
+                    <param id="0" name="Object">Bullet</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="871049323957980" type="BlueGolem">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">Bullet.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="898968761557325" type="BlueGolem" />
+            </actions>
+        </event-block>
+        <event-block sid="584083177232478">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="833481797026414" type="BlueGolem">
+                    <param id="0" name="Object">Bullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="332634902260526" type="BlueGolem">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">Bullet.Damage</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
