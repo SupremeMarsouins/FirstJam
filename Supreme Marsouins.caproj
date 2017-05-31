@@ -11,6 +11,7 @@
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -18,8 +19,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>1920</width>
+        <height>1080</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -42,6 +43,10 @@
     <object-folder>
         <object-type name="testdelamort" sid="754419445863193">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground" sid="168147235004278">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\jam\jam1ressource\bg.png" />
         </object-type>
     </object-folder>
     <families />
