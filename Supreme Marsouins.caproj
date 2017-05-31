@@ -11,10 +11,16 @@
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+<<<<<<< HEAD
+=======
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+>>>>>>> 1062b90afed0e6410fdcaad3cdadb7735affd113
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -42,8 +48,50 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="testdelamort" sid="754419445863193">
-            <plugin id="Text" />
+        <object-type name="BlueGolem" sid="965637457183995">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="238507353286156" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="341830316448385">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135395845439390" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet" sid="112368836265340">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Damages dealt when a golem is hit" name="Damage" sid="940963018238614" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="835173868291011">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994517083305366" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OrangeGolem" sid="405353943892562">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="625010377085998">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655420764418650" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
         <object-type name="TiledBackground" sid="168147235004278">
             <plugin id="TiledBg" />
@@ -90,7 +138,11 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+<<<<<<< HEAD
+        <event-sheet>Player_Sheet.xml</event-sheet>
+=======
+        <event-sheet>GolemEvents.xml</event-sheet>
+>>>>>>> 9c93fb202219bd3a04c30d734ff19d839c562adb
     </event-folder>
     <global-instances />
     <sounds-folder />
