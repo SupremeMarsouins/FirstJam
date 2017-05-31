@@ -2,7 +2,7 @@
 <c2layout>
     <name>Layout 1</name>
     <sid>164432484838120</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Player_Sheet</event-sheet>
     <size>
         <width>8000</width>
         <height>6000</height>
@@ -78,8 +78,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>678.311340332</x>
-                        <y>546.688659668</y>
+                        <x>1367</x>
+                        <y>869</y>
                         <z>0</z>
                         <width>84.622688293</width>
                         <height>84.622688293</height>
@@ -100,8 +100,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>683.5</x>
-                        <y>421.5</y>
+                        <x>1373</x>
+                        <y>744</y>
                         <z>0</z>
                         <width>87</width>
                         <height>87</height>
@@ -122,8 +122,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>691</x>
-                        <y>729</y>
+                        <x>1380</x>
+                        <y>1051</y>
                         <z>0</z>
                         <width>90.647666931</width>
                         <height>90.647666931</height>
@@ -144,8 +144,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>685.248535156</x>
-                        <y>841.751464844</y>
+                        <x>1374</x>
+                        <y>1164</y>
                         <z>0</z>
                         <width>92.951599121</width>
                         <height>92.951599121</height>

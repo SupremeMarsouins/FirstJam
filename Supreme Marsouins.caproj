@@ -90,7 +90,7 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Player_Sheet.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
